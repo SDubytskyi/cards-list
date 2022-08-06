@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Card component</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="../../../../grid/style.css">
+    
+</head>
+
+<body>
+
+  <div id="root" class="wrapper">
+    <div>
+      
+    </div>
+  </div>
+
+  <script type="module">
+    import OnLineStorePage from './index.js'
+
+    const page = new OnLineStorePage();
+    const root = document.querySelector('#root');
+   
+    root.append(page.element);
+  </script>
+</body>
+</html>

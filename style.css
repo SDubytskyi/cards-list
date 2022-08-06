@@ -1,0 +1,255 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+.container {
+    max-width: 1290px;
+    margin-top: 100px;
+    margin:auto;
+    height: auto;
+    
+  }
+
+body {
+   font-family: 'Montserrat', sans-serif;
+   font-weight: 400;
+   font-size: 13px; 
+}
+.product-card {
+    width: 317px;
+    margin: 60px auto;
+    box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.133);
+    border-radius: 8px;
+    padding-top: 0.1px;
+    padding: 15px 15px;
+}
+.img-wrapper {
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    height: 200px;
+    justify-content: center;
+    margin: 12px 12px 0;
+}
+.wrapper-content {
+    padding: 22px 24px;
+}
+.offer {
+    display: flex;
+    justify-content: space-between;
+}
+.product-rating {
+    background-color: #7E72F2;
+    width: 70px;
+    height: 27px;
+    border-radius: 3px;
+    display: flex;
+    align-items: center;
+}
+.product-rating-number {
+    margin: 0 11px;
+    color: white;
+}
+.product-rating-star {
+    width: 14px;
+}
+.product-price {
+    color: #2c2c2c;
+  font-size: 1.125rem;
+  font-weight: 400;
+}
+.product-description {
+    margin-top: 16px;
+}
+.product-categories {
+    font-size: 10px;
+    margin-top: 10px;
+}
+.btn {
+    height: 40px;
+    width: 100%;
+    background: #7E72F2;
+    border-radius: 0px 0px 5px 5px;
+    border: none;
+    font-family: inherit;
+    color: white;
+    cursor: pointer;
+    transition:background 0.5s ease;
+}
+.btn:hover {
+    background: rgb(109,95,240);
+    transition:background 0.5s ease;
+}
+
+            /* PAGINATION */
+::before, ::after {
+	box-sizing: border-box;
+} 
+ul{
+	list-style-type: none;
+	box-sizing: border-box;
+	padding: 0;
+}
+.offer-content {
+	display: flex;
+	justify-content: center;
+    align-items: center;
+    padding-bottom: 60px;
+}
+.list-nav {
+	display: flex;
+	align-items: center;
+}
+.btn-nav {
+	border: none;
+	border-radius: 50%;
+	width: 40px;
+	height: 40px;
+	cursor: pointer;
+	transition: background 0.3s ease;
+	display: flex;
+	align-items: center;
+    justify-content: center;
+}
+.btn-nav.active {
+	background: #7E72F2;
+}
+.btn-nav:hover {
+	background: #7E72F2;
+	transition: background 0.3s ease;
+}
+.prev {
+	margin-right: 15px;
+	padding: 12px;
+}
+.next{
+	margin-left: 15px;
+	padding: 12px;
+}
+            /* PRODUCT-LIST */
+.os-products-list{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+            /* GRID */
+    .row {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+    .left{
+      height:60vmax
+    }
+
+    .col-1 {
+      width: calc(100% / 12);
+    }
+
+    .col-2 {
+      width: calc(100% / 12 * 2);
+    }
+
+    .col-3 {
+      width: calc(100% / 12 * 3);
+    }
+
+    .col-4 {
+      width: calc(100% / 12 * 4);
+    }
+
+    .col-5 {
+      width: calc(100% / 12 * 5);
+    }
+
+    .col-6 {
+      width: calc(100% / 12 * 6);
+    }
+
+    .col-7 {
+      width: calc(100% / 12 * 7);
+    }
+
+    .col-8 {
+      width: calc(100% / 12 * 8);
+    }
+
+    .col-9 {
+      width: calc(100% / 12 * 9);
+    }
+
+    .col-10 {
+      width: calc(100% / 12 * 10);
+    }
+
+    .col-11 {
+      width: calc(100% / 12 * 11);
+    }
+
+    .col-12 {
+      width: calc(100% / 12 * 12);
+    }
+    @media (max-width: 576px) {
+
+      .col-s-none {
+        display: none;
+      }
+    
+      .row {
+        flex-direction: column;
+      }
+    
+      .col-s-12 {
+        width: 100%;
+      }
+    }
+    
+    @media (min-width: 577px) and (max-width: 768px) {
+    
+      .col-m-none {
+        display: none;
+      }
+    
+      .col-m-6 {
+        width: calc(100%/2);
+      }
+    
+      .col-m-12 {
+        width: 100%
+      }
+    }
+    
+    @media (min-width: 769px) and (max-width: 992px) {
+    
+      .col-l-3 {
+        width: calc(100%/12*3);
+      }
+    
+      .col-l-6 {
+        width: calc(100%/12*6);
+      }
+    
+      .col-l-9 {
+        width: calc(100%/12*9);
+      }
+    }
+    
+    @media (min-width: 993px) {
+    
+      .col-xl-3 {
+        width: calc(100%/12*3);
+      }
+    
+      .col-xl-4 {
+        width: calc(100%/12*4);
+      }
+    
+      .col-xl-9 {
+        width: calc(100%/12*9);
+      }
+    }
+    
+   
